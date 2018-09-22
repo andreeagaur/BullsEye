@@ -80,37 +80,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 if (user_progress == number){
                     score_count += number;
-                    System.out.println("one Banana");
                     score_counter.setText(String.valueOf(score_count));
-                    System.out.println("2 Banana");
                     correct_hit.setVisibility(View.VISIBLE);
-                    System.out.println("3 Banana");
                     random_number.setText(String.valueOf(random_number_generator()));
-                    System.out.println("4 Banana");
                 }
 
                 if (user_progress > number){
                     score_count += (user_progress - number);
-                    System.out.println("one Banana");
                     score_counter.setText(String.valueOf(score_count));
-                    System.out.println("two Banana");
                     correct_hit.setText("Your value: "+ String.valueOf(user_progress));
                     correct_hit.setVisibility(View.VISIBLE);
-                    System.out.println("three Banana");
                     random_number.setText(String.valueOf(random_number_generator()));
-                    System.out.println("four Banana");
                 }
 
                 if(user_progress < number){
                     score_count += (number - user_progress);
-                    System.out.println("one Banana");
                     score_counter.setText(String.valueOf(score_count));
-                    System.out.println("2 Banana");
                     correct_hit.setText("Your value: " + String.valueOf(user_progress));
                     correct_hit.setVisibility(View.VISIBLE);
-                    System.out.println("3 Banana");
                     random_number.setText(String.valueOf(random_number_generator()));
-                    System.out.println("4 Banana");
                 }
         }
     }
